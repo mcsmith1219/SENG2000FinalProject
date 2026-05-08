@@ -1,0 +1,118 @@
+============================================
+CATALOG PERFORMANCE BENCHMARK
+============================================
+
+
+--- Testing with 10 games ---
+
+Adding 10 games:
+  ArrayList: 3,118,200 ns (3.1182 ms)
+  HashMap:   2,627,100 ns (2.6271 ms)
+  Speedup:   1.19x
+
+Searching by exact game name (10 searches):
+  ArrayList: 195,500 ns (0.1955 ms) - 10 hits
+  HashMap:   56,400 ns (0.0564 ms) - 10 hits
+  Speedup:   3.47x
+
+Checking existence by ID (10 checks):
+  ArrayList: 63,800 ns (0.0638 ms) - 10 hits
+  HashMap:   60,000 ns (0.0600 ms) - 10 hits
+  Speedup:   1.06x
+
+Sorting by title (10 games):
+  ArrayList: 5,146,200 ns (5.1462 ms)
+  HashMap:   930,800 ns (0.9308 ms)
+  Difference: 81.91%
+
+--- Testing with 50 games ---
+
+Adding 50 games:
+  ArrayList: 87,200 ns (0.0872 ms)
+  HashMap:   177,000 ns (0.1770 ms)
+  Speedup:   0.49x
+
+Searching by exact game name (50 searches):
+  ArrayList: 2,061,800 ns (2.0618 ms) - 50 hits
+  HashMap:   107,200 ns (0.1072 ms) - 50 hits
+  Speedup:   19.23x
+
+Checking existence by ID (50 checks):
+  ArrayList: 2,097,700 ns (2.0977 ms) - 50 hits
+  HashMap:   32,700 ns (0.0327 ms) - 50 hits
+  Speedup:   64.15x
+
+Sorting by title (50 games):
+  ArrayList: 489,000 ns (0.4890 ms)
+  HashMap:   442,400 ns (0.4424 ms)
+  Difference: 9.53%
+
+--- Testing with 100 games ---
+
+Adding 100 games:
+  ArrayList: 1,207,200 ns (1.2072 ms)
+  HashMap:   1,596,700 ns (1.5967 ms)
+  Speedup:   0.76x
+
+Searching by exact game name (100 searches):
+  ArrayList: 1,342,600 ns (1.3426 ms) - 100 hits
+  HashMap:   266,000 ns (0.2660 ms) - 100 hits
+  Speedup:   5.05x
+
+Checking existence by ID (100 checks):
+  ArrayList: 1,117,000 ns (1.1170 ms) - 100 hits
+  HashMap:   49,900 ns (0.0499 ms) - 100 hits
+  Speedup:   22.38x
+
+Sorting by title (100 games):
+  ArrayList: 723,600 ns (0.7236 ms)
+  HashMap:   10,465,900 ns (10.4659 ms)
+  Difference: 1346.37%
+
+--- Testing with 500 games ---
+
+Adding 500 games:
+  ArrayList: 4,428,300 ns (4.4283 ms)
+  HashMap:   498,400 ns (0.4984 ms)
+  Speedup:   8.89x
+
+Searching by exact game name (500 searches):
+  ArrayList: 10,827,800 ns (10.8278 ms) - 500 hits
+  HashMap:   361,000 ns (0.3610 ms) - 500 hits
+  Speedup:   29.99x
+
+Checking existence by ID (500 checks):
+  ArrayList: 1,055,700 ns (1.0557 ms) - 500 hits
+  HashMap:   150,100 ns (0.1501 ms) - 500 hits
+  Speedup:   7.03x
+
+Sorting by title (500 games):
+  ArrayList: 759,200 ns (0.7592 ms)
+  HashMap:   689,800 ns (0.6898 ms)
+  Difference: 9.14%
+
+--- Testing with 1000 games ---
+
+Adding 1000 games:
+  ArrayList: 379,000 ns (0.3790 ms)
+  HashMap:   589,300 ns (0.5893 ms)
+  Speedup:   0.64x
+
+Searching by exact game name (1000 searches):
+  ArrayList: 79,817,900 ns (79.8179 ms) - 1000 hits
+  HashMap:   178,100 ns (0.1781 ms) - 1000 hits
+  Speedup:   448.16x
+
+Checking existence by ID (1000 checks):
+  ArrayList: 6,100,500 ns (6.1005 ms) - 1000 hits
+  HashMap:   233,100 ns (0.2331 ms) - 1000 hits
+  Speedup:   26.17x
+
+Sorting by title (1000 games):
+  ArrayList: 2,073,000 ns (2.0730 ms)
+  HashMap:   3,497,500 ns (3.4975 ms)
+  Difference: 68.72%
+
+============================================
+Benchmark complete! Results saved.
+============================================
