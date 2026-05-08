@@ -3,7 +3,7 @@
 ## Overview
 Video Game Catalog Manager is a JavaFX desktop app for searching video games, saving games to a personal library, reviewing games, and interacting with other demo users through follows, likes, comments, mutuals, and recommendations.
 
-The project was created for SENG 2000 to show how advanced data structures can support a practical application instead of only being used in small terminal examples.
+The project was developed by Matthew C. Smith and Bereket Asfaw and was created for SENG 2000 to show how advanced data structures can support a practical application instead of only being used in small terminal examples.
 
 ## Project Objective
 The objective of this app is to combine a usable game catalog interface with data structure demonstrations.
@@ -31,68 +31,6 @@ The app includes:
 - `BTree` supports indexed lookup in the file-based repositories.
 - `HashSet` helps prevent duplicate user-game entries.
 - `HashMap` is compared against `ArrayList` in the benchmark tests.
-
-## Project Structure
-
-```text
-src/main/java/auth
-  AuthService.java
-  RAWGClient.java
-
-src/main/java/config
-  AppSettings.java
-  SettingsManager.java
-
-src/main/java/database
-  DatabaseManager.java
-  GameRepository.java
-  UserGameRepository.java
-  UserRepository.java
-
-src/main/java/datastructures
-  BFSGraph.java
-  BTree.java
-  PriorityQueueEntry.java
-  Trie.java
-
-src/main/java/gui
-  App.java
-
-src/main/java/model
-  RecordGame.java
-  User.java
-  UserGameEntry.java
-
-src/main/java/service
-  CatalogArrayListImpl.java
-  CatalogBenchmark.java
-  CatalogBenchmarkTest.java
-  CatalogHashMapImpl.java
-  CatalogService.java
-  GraphService.java
-
-src/main/java/storage
-  FileStorage.java
-
-src/main/resources
-  styles.css
-
-app_data
-  users.tsv
-  games.tsv
-  user_games.tsv
-  comments.tsv
-  likes.tsv
-  follows.tsv
-
-data_structures
-  bfs_graph.txt
-  catalog_benchmark.txt
-  hashset.txt
-  priorityqueue.txt
-  treemap.txt
-  trie.txt
-```
 
 ## Demo Users
 
@@ -204,19 +142,3 @@ Highlights from the included benchmark output:
 - At 1000 games, exact name search was about `448.16x` faster with `HashMap`.
 
 Some sorting results vary because both structures still need to produce ordered output, but the benchmark clearly shows why hash-based lookup is useful for catalog search operations.
-
-## Notes About Persistence
-
-The app uses flat files instead of a database.
-
-- `app_data` stores the demo users, games, user libraries, comments, likes, and follows.
-- `app_data/settings.properties` is generated locally when the app runs and is ignored by Git.
-- `data_structures` stores readable snapshots of the structures used by the app.
-
-This makes the project easier to run, inspect, and demonstrate for class.
-
-## GitHub Cleanup Notes
-
-This version is ready to commit without generated build output. The `.gitignore` excludes `target/`, `.class` files, IDE folders, OS files, logs, `.env`, and the local `app_data/settings.properties` file.
-
-Unused asset-folder button loading was removed, the empty My Library suggestion box was removed, the social graph implementation is named `BFSGraph.java`, and the Social Overview section uses a cleaner format.
