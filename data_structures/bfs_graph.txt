@@ -1,0 +1,8 @@
+BereketA6 -> mcsmith1219, user2, user3
+mcsmith1219 -> BereketA6, user1, user4
+user1 -> mcsmith1219, user2
+user2 -> mcsmith1219, user5
+user3 -> BereketA6, user4
+user4 -> mcsmith1219, user6
+user5 -> mcsmith1219, user1
+user6 -> BereketA6, user5

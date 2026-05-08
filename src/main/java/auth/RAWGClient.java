@@ -27,7 +27,7 @@ import java.util.List;
  **/
 
 public class RAWGClient {
-    private static final String RAWG_API_KEY = "INSERT_YOUR_RAWG_API_KEY_HERE";
+    private static final String RAWG_API_KEY = "PASTE_YOUR_RAWG_API_KEY_HERE";
     private final HttpClient httpClient;
 
     public RAWGClient() {
